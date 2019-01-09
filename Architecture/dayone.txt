@@ -23,3 +23,12 @@ Babbage in the 1800s developed large mechanical computers
 Binary representation	
 	One binary "digit" is called a bit
 	101 = 1 * 2 ** 2 + 0 * 2 ** 1 + 1 * 2 ** 0
+
+Moore's law (1965)
+	Number of transistors on a chip double every year... Moore's law is close to dying
+
+Processor Design Techniques
+	Specialized pipelines
+
+Assembly language
+	Very simple language that is used to write human readable code. Easily converts to hexadecimal and then binary.
