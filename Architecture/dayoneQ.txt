@@ -1,5 +1,0 @@
-What is the binary number 1101 in decimal?
-	13
-What is the largest binary number that can be held in a byte, given only positive numbers?
-	255
-
