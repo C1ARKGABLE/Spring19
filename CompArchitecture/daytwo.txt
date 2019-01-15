@@ -1,0 +1,14 @@
+Subtraction is addition with negative numbers.
+Can't indicate a negative number in the traditional way (eg -28)
+
+In binary, we use twos complement
+  a binary number, N, can be represented as 2**n - N, where n is the number of bits
+
+  (2) 0010's twos complement would be 10000 (16) - 0010 (2) = 1110
+
+
+  Magic algorithm:
+    Flip digits and add one
+    (7) 0111 -> 1000 + 1 -> (-7) 1001
+
+
