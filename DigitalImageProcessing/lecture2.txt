@@ -1,0 +1,46 @@
+matrix => grid => mesh => f(x,y) => (-∞, ∞)
+
+Pictures are 2D representations of the 4D world
+
+OCR => Optical character recognition => Characters on a grid, identify the characters
+
+Intensity (color) remains the same while the reflection (light around) changes. Red is red, but in blue light red isn't
+
+
+Property of an Object, area we deal with Object
+Source Strength, Astronomical imaging, florescence microscopy
+Concentration, Nuke medicine, MRI
+Wave amplitude, Seismology
+Field Strength, Geomagnetic
+Optical reflectance, photography
+Microwave, radar
+
+Direct imaging
+  Parallel --> Human Eye, Camera
+  Serial --> Scanning microscope
+Indirect imaging
+  X-Ray, CT Scan, MRI
+
+
+What is Digital Image Processing?
+
+Mathematical analysis of objects in pictorial forms
+
+Types of Images:
+
+  Still:
+  Streaming:
+
+
+Question to ask
+  What is the architecture of your infrastructure?
+  What is the architecture of your database?
+  Do you using any programming of 5th or 6th level complexity?
+
+  P
+
+
+
+
+
+

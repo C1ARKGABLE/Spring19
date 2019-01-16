@@ -1,0 +1,43 @@
+Dr. Du
+(704)687-7307
+
+Introduction to Data Mining 2nd Edition:
+Pang-nig Tan
+Textbook Slides:
+https://www-users.cs.umn.edu/~kumar001/dmbook/index.php
+Textbook not required if we use slides
+
+Data Mining:
+Clustering
+Predictive Modeling
+Association Rules
+Anomaly Detection
+
+Labeled Data is used to create training data with a Learn Classifier (Modeling)
+Labels are usually the end result you want to predict or measure
+
+Supervised:
+Classification
+Regression
+Unsupervised:
+Clustering (because we only use attributes)
+
+To calculate the variance you use this formula:
+
+
+One take home message from Statistics:
+Statistics is all about variati
+Variance is king, mean is a little soldier.
+
+Types of Attributes:
+Nominal - Distinctness - ID numbers, zip codes
+Ordinal - Distinctness & Order -Rankings from a scale, grades, height {short, medium, tall}
+Interval - Distinctness & Order & Meaningful Differences - Calendar dates
+Ratio Attribute - All 4 properties/operations - temp in Kelvin
+
+
+
+Countably Infinite: {1, 2, 3, ….}
+Uncountable Infinet: All the values between 0 & 1
+Discrete Variables are finite or countably infinite
+Continuous Attributes use real numbers

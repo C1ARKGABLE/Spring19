@@ -1,0 +1,6 @@
+Write 150 words over time dilation.
+
+Time dilation is implied in Einstein's theory of special relativity and it dictates that time is not constant, but relative to the observer. Based in our 4D world, it can be thought that the maximum combined "speed" through all dimensions is set at C, the universal constant. Time, being one of the dimensions, can be thought of as stretching corresponding to the "speed" relative to the observer. A semi-practical consequence of this is that satellites, and their clocks are in orbit, moving at high speeds relative to Earth's surface. These clocks, while accurate, have to be continually updated in accordance with clocks on Earth. This is mostly due to general relativity (e.g. gravitational redshifting), but partially due to time dilation. Without this maintenance, the clocks would drift relative to Earth clocks, rendering GPS useless and image timestamps inaccurate. Using the below equation, an observer can determine the time period experienced by the observed object, the equation is known as the Lorentz factor (𝛾). By multiplying the observer’s time period (e.g. 120 seconds) by 𝛾, where v is the observed velocity, and c is the speed of light in a vacuum. This will output the time period experienced by the observed object.
+
+
+{\frac{1}{\sqrt{1-{\frac{v^{2}}{c^{2}}}}}}
