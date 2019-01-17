@@ -1,0 +1,17 @@
+Mainframe => HPC => Cloud computing
+All similar, but improved price points.
+
+Mainframe, no processing at client level, just text consoles
+HPC, light preprocessing and prep on client side
+Cloud computing, rent a HPC. Can spin up/spin down storage, GPU/CPU cores, memory as needed.
+
+
+Big data has large variety (complexity)
+
+Relational Database
+Text data
+Semi-structured (XML)
+Graphs
+Streaming
+
+Some big data is public. NASA pushes tons of data for public analysis.
