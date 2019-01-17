@@ -23,5 +23,27 @@ Large companies store large quantities, with hopes that data will become valuabl
 
 Old model: Few companies are generating data, other consume from the few
 
-New model:
+Cloud computing
+IT resources provided as a service
+Offerings from Microsoft, Amazon, Google
+
+Benefits:
+Cost and management, outsourced
+Reduced time to deploy, work outta the box
+Scaling, on demand... Scale up or down
+Reliability, redundant, shared
+Sustainability, hardware need not be upgraded
+
+
+Types
+  Public cloud:
+    Hosted on vendor's premise
+  Private cloud:
+    Dedicated within organization
+  Hybrid cloud:
+    Hosts private information on private cloud, noncritical on public
+
+IaaS:
+Infrastructure as a Service, AWS, etc
+
 
