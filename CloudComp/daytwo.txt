@@ -16,6 +16,12 @@ Streaming
 
 Some big data is public. NASA pushes tons of data for public analysis.
 
-
 Data is generated quickly, must be processed quickly.
 Late decisions -> missed opportunities (Aka targeted advertising)
+
+Large companies store large quantities, with hopes that data will become valuable
+
+Old model: Few companies are generating data, other consume from the few
+
+New model:
+
