@@ -15,3 +15,7 @@ Graphs
 Streaming
 
 Some big data is public. NASA pushes tons of data for public analysis.
+
+
+Data is generated quickly, must be processed quickly.
+Late decisions -> missed opportunities (Aka targeted advertising)
