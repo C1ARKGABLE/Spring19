@@ -1,0 +1,4 @@
+Designing combinational circuits
+  Outputs depend on inputs (function)
+  Ex. f = A*B' + C
+
