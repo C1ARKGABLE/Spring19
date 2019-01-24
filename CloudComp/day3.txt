@@ -1,0 +1,4 @@
+Minimize amount of math equatgitions per slide
+Introduce background information with machine information and data setup
+critically think.
+
