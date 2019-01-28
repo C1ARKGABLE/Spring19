@@ -1,0 +1,19 @@
+Four pillars
+  Narrative (A picture that tells a story)
+  Phenomenology (What is happening in the picture)
+  Ethnography (f(x,y) = h(x,y) * i(x,y), what do you build, what's the background, metadata)
+  Grounded Theory (Fourier Transform)
+
+Fourier Transform is to connects time domain to frequency
+  x(t) ---> Frequency
+
+The sequence is Fourier Series
+  Fourier Transform
+Periodic or Aperiodic
+
+Laplace transform
+
+Fourier will only transform stable signals (limitation and interruptions change outcomes)
+  Continuity is broken when signals aren't stable
+
+Digital image points can be infinite, we can study sample points rather than the entirety
