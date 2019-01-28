@@ -1,7 +1,7 @@
 Four pillars
   Narrative (A picture that tells a story)
   Phenomenology (What is happening in the picture)
-  Ethnography (f(x,y) = h(x,y) * i(x,y), what do you build, what's the background, metadata)
+  Ethnography (f(x,y) = r(x,y) * i(x,y), what do you build, what's the background, metadata)
   Grounded Theory (Fourier Transform)
 
 Fourier Transform is to connects time domain to frequency
