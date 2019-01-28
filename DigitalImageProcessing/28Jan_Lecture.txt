@@ -17,3 +17,19 @@ Fourier will only transform stable signals (limitation and interruptions change 
   Continuity is broken when signals aren't stable
 
 Digital image points can be infinite, we can study sample points rather than the entirety
+
+Our eyes can see an image, can see minute shadows in an xray or MRI.
+
+Our eyes only have a certain bandwidth to see with
+
+A picture captures the image as the sensor sees it (EM waves)
+
+Phenomenology in terms of amplitude and magnitude
+Magnitude of waves are between 0 and 1
+
+
+
+
+
+
+
