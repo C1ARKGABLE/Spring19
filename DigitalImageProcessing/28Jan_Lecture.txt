@@ -28,8 +28,20 @@ Phenomenology in terms of amplitude and magnitude
 Magnitude of waves are between 0 and 1
 
 
+Intensity is a adjusting for the min and max of the picture.
+It's important to normalize because solid reference points.
+
+Picture is a matrix.
+
+f(0,0)     f(0,1) ... f(0,N - 1)
+f(1,0)     ...    ...
+...        ...    ...
+f(M - 1,0) ...    ... f(M - 1, N -1)
 
 
 
+f(M-1, N-1)
+f(t) = { 1, 0 <= t <= a
+         0, somewhere else}
 
 
