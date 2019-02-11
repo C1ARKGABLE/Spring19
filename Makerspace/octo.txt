@@ -1,0 +1,12 @@
+ZYYX 1:
+ZYYX 2:
+TAZ:
+Rostock:
+Ultimaker 1:
+Ultimaker 2:
+Ultimaker 3:
+Prusa?:
+
+Needed hardware:
+  Raspberry Pi 3B
+  8 GB (preferably)
