@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( notPython )
+find_package( OpenCV REQUIRED )
+add_executable( notPython notPython.cpp )
+target_link_libraries( notPython ${OpenCV_LIBS} )

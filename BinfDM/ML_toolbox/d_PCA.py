@@ -33,12 +33,20 @@ class d_PCA:
 
         # eigendecomposition of the covariance matrix
         eigenValues, eigenVectors = LA.eig(covarianceMatrix)
+
+        eigenValues = eigenValues.real
+        eigenVectors = eigenVectors.real
+
+        # sort eigenvalues in descending order
         II = eigenValues.argsort()[::-1]
         eigenValues = eigenValues[II]
         eigenVectors = eigenVectors[:, II]
 
-        eigenValues = eigenValues.real
-        eigenVectors = eigenVectors.real
+        # percentage of variance explained by each PC
+        totalVariance = sum(eigenValues)
+        percentVariance = np.zeros(len(eigenValues))
+        for i in range(len(eigenValues)):
+            percentVariance[i] = eigenValues[i] / totalVariance
 
         # get scores
         pcaScores = np.matmul(dataForPca, eigenVectors)
@@ -46,7 +54,7 @@ class d_PCA:
         # collect PCA results
         pcaResults = {'data': x,
                       'mean_centered_data': xMeanCentered,
-                      'PC_variance': eigenValues,
+                      'percent_variance': percentVariance,
                       'loadings': eigenVectors,
                       'scores': pcaScores,
                       'data_after_pretreatment': dataForPca}
