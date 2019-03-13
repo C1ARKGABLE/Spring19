@@ -1,0 +1,28 @@
+This is the README file that accompanies DocWordCount.java to help with execution.
+
+Difference in input from WordCount:
+
+Both DocWordCount and WordCount accept a directory with files, text or otherwise.
+
+Difference in output from WordCount:
+
+DocWordCount now outputs the file name before each word, with the word count for that word in that file. The file name and word pair are delineated with 5 hashes "#####".
+
+Like in WordCount, one must create an empty build directory, denoted as $buildDir, and two hadoop directories, one containing the input files, $inputFileDir, and one where the output files will be placed upon completion, $outputFileDir.
+
+Compilation and execution of DocWordCount is nearly identical to WordCount:
+
+  Compile to a build directory with the commands given in the step by step pdf:
+
+    javac -cp /opt/cloudera/parcels/CDH/lib/hadoop/*:/opt/cloudera/parcels/CDH/lib/hadoop-mapreduce/* DocWordCount.java -d $buildDir -Xlint
+    jar -cvf docwordcount.jar -C $buildDir .
+
+  Execution requires one change, the library header in the hadoop execution command:
+
+    hadoop jar docwordcount.jar org.myorg.DocWordCount $inputFileDir $outputFileDir
+
+After running these commands, the user can retrieve the outputs by pulling from the hdfs.
+
+
+
+
