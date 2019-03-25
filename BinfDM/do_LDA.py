@@ -11,13 +11,13 @@ from sklearn.linear_model import LogisticRegression
 
 # for using latex
 from matplotlib import rc
-rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
-## for Palatino and other serif fonts use:
-#rc('font',**{'family':'serif','serif':['Palatino']})
+rc('font', **{'family': 'sans-serif', 'sans-serif': ['Helvetica']})
+# for Palatino and other serif fonts use:
+# rc('font',**{'family':'serif','serif':['Palatino']})
 rc('text', usetex=True)
 
 import matplotlib.pyplot as plt
-plt.rc('text', usetex = True)
+plt.rc('text', usetex=True)
 plt.rc('font', family='serif')
 
 from ML_toolbox import d_LDA
@@ -44,7 +44,7 @@ plt.rcParams.update(plot_params)
 # -----------------------------------------------------
 bool_use_sklearn = True
 
-index_example = 5 # apply d_LDA to different data
+index_example = 3  # apply d_LDA to different data
 # index_example = 1: toy data
 # index_example = 2: iris data set: setosa and virginica
 # index_example = 3: iris data set: versicolor and virginica
@@ -84,8 +84,8 @@ if not bool_use_sklearn:
         # plot
         unique_targets = np.unique(data_for_analysis.target)
 
-        II_0 = (np.where(data_for_analysis.target==unique_targets[0]))[0]
-        II_1 = (np.where(data_for_analysis.target==unique_targets[1]))[0]
+        II_0 = (np.where(data_for_analysis.target == unique_targets[0]))[0]
+        II_1 = (np.where(data_for_analysis.target == unique_targets[1]))[0]
 
         N_0 = len(II_0)
         N_1 = len(II_1)
@@ -105,15 +105,17 @@ if not bool_use_sklearn:
 
         ax.plot([0, W_scaled[0]], [0, W_scaled[1]], color='green')
         ax.scatter(-my_LDA_result['projection_0'] * math.cos(theta),
-                -my_LDA_result['projection_0'] * math.sin(theta),
-                color='blue', marker='x', s=marker_size)
+                   -my_LDA_result['projection_0'] * math.sin(theta),
+                   color='blue', marker='x', s=marker_size)
         ax.scatter(-my_LDA_result['projection_1'] * math.cos(theta),
-                -my_LDA_result['projection_1'] * math.sin(theta),
-                color='red', marker='x', s=marker_size)
+                   -my_LDA_result['projection_1'] * math.sin(theta),
+                   color='red', marker='x', s=marker_size)
 
         ax.set_aspect(1)
 
         fig.show()
+
+        blah = input()
 
         print("\nDone with applying LDA to the toy data!\n")
 
@@ -126,9 +128,9 @@ if not bool_use_sklearn:
         iris = load_iris()
 
         # get indices for each flower type
-        II_setosa = np.where(iris.target==0)
-        II_versicolor = np.where(iris.target==1)
-        II_virginica = np.where(iris.target==2)
+        II_setosa = np.where(iris.target == 0)
+        II_versicolor = np.where(iris.target == 1)
+        II_virginica = np.where(iris.target == 2)
 
         II_setosa = II_setosa[0]
         II_versicolor = II_versicolor[0]
@@ -164,6 +166,8 @@ if not bool_use_sklearn:
         ax.set_ylabel('petal length')
 
         fig.show()
+
+        blah = input()
 
         # apply two-class LDA
         obj_LDA = d_LDA.LDA(num_of_classes=2)
@@ -208,6 +212,8 @@ if not bool_use_sklearn:
 
         fig.show()
 
+        blah = input()
+
         print("\nDone with applying LDA to the setosa and virginica!\n")
 
         exit()
@@ -219,9 +225,9 @@ if not bool_use_sklearn:
         iris = load_iris()
 
         # get indices for each flower type
-        II_setosa = np.where(iris.target==0)
-        II_versicolor = np.where(iris.target==1)
-        II_virginica = np.where(iris.target==2)
+        II_setosa = np.where(iris.target == 0)
+        II_versicolor = np.where(iris.target == 1)
+        II_virginica = np.where(iris.target == 2)
 
         II_setosa = II_setosa[0]
         II_versicolor = II_versicolor[0]
@@ -258,6 +264,8 @@ if not bool_use_sklearn:
 
         fig.show()
 
+        blah = input()
+
         # apply LDA
         x0 = iris.data[II_versicolor, :]
         x1 = iris.data[II_virginica, :]
@@ -274,7 +282,8 @@ if not bool_use_sklearn:
         fig = plt.figure()
 
         ax = fig.add_subplot(1, 1, 1)
-        ax.set_title('Results from applying LDA to versicolor and virginica data')
+        ax.set_title(
+            'Results from applying LDA to versicolor and virginica data')
         ax.set_xlabel('projection onto W')
         ax.set_ylabel('')
 
@@ -294,6 +303,8 @@ if not bool_use_sklearn:
                    marker='*', s=marker_size, color='magenta')
 
         fig.show()
+
+        blah = input()
 
         print("\nDone with applying LDA to the virginica and versicolor data!\n")
 
@@ -341,6 +352,8 @@ if not bool_use_sklearn:
 
         fig.show()
 
+        blah = input()
+
         print("\nDone with applying LDA to the setosa, virginica, and versicolor data!\n")
 
         exit()
@@ -376,6 +389,8 @@ if not bool_use_sklearn:
         ax.legend()
 
         fig.show()
+
+        blah = input()
 
         print("\nDone with applying LDA to the cell line data!\n")
 
@@ -419,7 +434,8 @@ else:
         fig = plt.figure()
 
         ax = fig.add_subplot(1, 1, 1)
-        ax.set_title('Results from applying sklearn LDA to iris setosa and virginica')
+        ax.set_title(
+            'Results from applying sklearn LDA to iris setosa and virginica')
         ax.set_xlabel(r'$W_1$')
         ax.scatter(sklearn_LDA_projection[0:50], np.zeros(50),
                    marker='o', s=marker_size, color='blue', label='setosa')
@@ -429,6 +445,8 @@ else:
         ax.legend()
 
         fig.show()
+
+        blah = input()
 
         print(sklearn_LDA_fit.coef_)
 
@@ -448,9 +466,11 @@ else:
         II_versicolor = II_versicolor[0]
         II_virginica = II_virginica[0]
 
-        X = np.vstack((iris.data[II_versicolor, :], iris.data[II_virginica, :]))
+        X = np.vstack((iris.data[II_versicolor, :],
+                       iris.data[II_virginica, :]))
 
-        y = np.concatenate((iris.target[II_versicolor], iris.target[II_virginica]))
+        y = np.concatenate(
+            (iris.target[II_versicolor], iris.target[II_virginica]))
 
         sklearn_LDA = LDA(n_components=1)
         sklearn_LDA_fit = sklearn_LDA.fit(X, y)
@@ -460,7 +480,8 @@ else:
         fig = plt.figure()
 
         ax = fig.add_subplot(1, 1, 1)
-        ax.set_title('Results from applying sklearn LDA to iris setosa and virginica')
+        ax.set_title(
+            'Results from applying sklearn LDA to iris setosa and virginica')
         ax.set_xlabel(r'$W_1$')
         ax.scatter(sklearn_LDA_projection[0:50], np.zeros(50),
                    marker='o', s=marker_size, color='blue', label='versicolor')
@@ -470,6 +491,8 @@ else:
         ax.legend()
 
         fig.show()
+
+        blah = input()
 
         print(sklearn_LDA_fit.coef_)
 
@@ -482,7 +505,8 @@ else:
 
         sklearn_LDA = LDA(n_components=2)
         sklearn_LDA_fit = sklearn_LDA.fit(iris.data, iris.target)
-        sklearn_LDA_projection = sklearn_LDA.fit_transform(iris.data, iris.target)
+        sklearn_LDA_projection = sklearn_LDA.fit_transform(
+            iris.data, iris.target)
         sklearn_LDA_projection = -sklearn_LDA_projection
 
         # plot the projections
@@ -502,6 +526,8 @@ else:
 
         fig.show()
 
+        blah = input()
+
         print(sklearn_LDA_fit.coef_)
 
         exit()
@@ -515,8 +541,8 @@ else:
         my_X = data_in.values
         my_Y = np.concatenate((np.zeros(20), np.ones(20)))
 
-        II_0 = np.where(my_Y==0)
-        II_1 = np.where(my_Y==1)
+        II_0 = np.where(my_Y == 0)
+        II_1 = np.where(my_Y == 1)
 
         II_0 = II_0[0]
         II_1 = II_1[0]
@@ -539,6 +565,8 @@ else:
         ax.legend()
 
         fig.show()
+
+        blah = input()
 
         print("\nDone with applying sklearn LDA to the cell line data!\n")
 
@@ -565,9 +593,13 @@ ax = fig.add_subplot(1, 1, 1)
 ax.set_title('PCA of cell line data')
 ax.set_xlabel('PC1')
 ax.set_ylabel('PC2')
-ax.plot(PCA_scores[0:20, 0], PCA_scores[0:20, 1], linestyle='None', color='blue', marker='o')
-ax.plot(PCA_scores[20:40, 0], PCA_scores[20:40, 1], linestyle='None', color='red', marker='o')
+ax.plot(PCA_scores[0:20, 0], PCA_scores[0:20, 1],
+        linestyle='None', color='blue', marker='o')
+ax.plot(PCA_scores[20:40, 0], PCA_scores[20:40, 1],
+        linestyle='None', color='red', marker='o')
 fig.show()
+
+blah = input()
 
 # kmeans clustering of cell line data
 X = data_in.values
@@ -582,17 +614,20 @@ print("KMeans clustering results: cluster centers")
 print(sklearn_KMeans.cluster_centers_)
 
 # hierarchical clustering
-sklearn_agglomerative_clustering = AgglomerativeClustering(n_clusters=2, linkage='complete', affinity='euclidean')
+sklearn_agglomerative_clustering = AgglomerativeClustering(
+    n_clusters=2, linkage='complete', affinity='euclidean')
 sklearn_agglomerative_clustering.fit(X)
 print("agglomerative clustering results: complete linkage, euclidean distance")
 print(sklearn_agglomerative_clustering.labels_)
 
-sklearn_agglomerative_clustering = AgglomerativeClustering(n_clusters=2, linkage='average', affinity='euclidean')
+sklearn_agglomerative_clustering = AgglomerativeClustering(
+    n_clusters=2, linkage='average', affinity='euclidean')
 sklearn_agglomerative_clustering.fit(X)
 print("agglomerative clustering results: average linkage, euclidean distance")
 print(sklearn_agglomerative_clustering.labels_)
 
-sklearn_agglomerative_clustering = AgglomerativeClustering(n_clusters=2, linkage='complete', affinity='manhattan')
+sklearn_agglomerative_clustering = AgglomerativeClustering(
+    n_clusters=2, linkage='complete', affinity='manhattan')
 sklearn_agglomerative_clustering.fit(X)
 print("agglomerative clustering results: complete linkage, manhattan distance")
 print(sklearn_agglomerative_clustering.labels_)
